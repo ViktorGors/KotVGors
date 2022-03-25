@@ -176,6 +176,7 @@ fun mergePhoneBooks(mapA: Map<String, String>, mapB: Map<String, String>): Map<S
         else mapC += name to number
     return mapC
 }
+
 /**
  * Средняя (4 балла)
  *
@@ -352,6 +353,8 @@ fun findSumOfTwo(list: List<Int>, number: Int): Pair<Int, Int> {
  *   ) -> emptySet()
  */
 fun bagPacking(treasures: Map<String, Pair<Int, Int>>, capacity: Int): Set<String> = TODO()
+
+
 
 
 

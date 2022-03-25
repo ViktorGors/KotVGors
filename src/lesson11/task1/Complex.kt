@@ -5,7 +5,14 @@ package lesson11.task1
 /**
  * Фабричный метод для создания комплексного числа из строки вида x+yi
  */
-fun Complex(s: String): Complex = TODO()
+fun Complex(s: String): Complex {
+    val sign = if ("-" in s) "-"
+    else "+"
+    val parts = s.split(sign, "i")
+    val re = parts[0].toDouble()
+    val im = if (sign == "-") -parts[1].toDouble() else parts[1].toDouble()
+    return (Complex(re, im))
+}
 
 /**
  * Класс "комплексное число".
@@ -21,12 +28,12 @@ class Complex(val re: Double, val im: Double) {
     /**
      * Конструктор из вещественного числа
      */
-    constructor(x: Double) : this(TODO(), TODO())
+    constructor(x: Double) : this(x, 0.0)
 
     /**
      * Сложение.
      */
-    operator fun plus(other: Complex): Complex = TODO()
+    operator fun plus(other: Complex): Complex = Complex(this.re + other.re, this.im + other.im)
 
     /**
      * Смена знака (у обеих частей числа)
@@ -36,7 +43,7 @@ class Complex(val re: Double, val im: Double) {
     /**
      * Вычитание
      */
-    operator fun minus(other: Complex): Complex = TODO()
+    operator fun minus(other: Complex): Complex = Complex(this.re - other.re, this.im - other.im) // все как с fun plus, ток "+" замен на "-"
 
     /**
      * Умножение

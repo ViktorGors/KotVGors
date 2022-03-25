@@ -19,7 +19,17 @@ data class Point(val x: Double, val y: Double) {
      */
     fun distance(other: Point): Double = sqrt(sqr(x - other.x) + sqr(y - other.y))
 }
+/////////
+var ListNameNumber = mutableMapOf<String, String>()
+class NameNumber(var Name: String, var Number: String) {
+    //var ListNameNumber = mutableMapOf<String, String>()
+    fun NewNameNumber(other: NameNumber) = ListNameNumber.put(Name, Number)
+    fun FuckNameNumber(other: NameNumber) = ListNameNumber.put(Name, Number)
 
+}
+
+
+/////////
 /**
  * Треугольник, заданный тремя точками (a, b, c, см. constructor ниже).
  * Эти три точки хранятся в множестве points, их порядок не имеет значения.
@@ -211,4 +221,5 @@ fun circleByThreePoints(a: Point, b: Point, c: Point): Circle = TODO()
  * соединяющий две самые удалённые точки в данном множестве.
  */
 fun minContainingCircle(vararg points: Point): Circle = TODO()
+
 

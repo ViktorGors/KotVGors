@@ -56,8 +56,10 @@ fun main() {
     val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
     println("Root product: $x1x2")
 }
-
 /**
+<<<<<<< HEAD
+=======
+
  * Тривиальная (3 балла).
  *
  * Задача имеет повышенную стоимость как первая в списке.
@@ -65,7 +67,12 @@ fun main() {
  * Пользователь задает время в часах, минутах и секундах, например, 8:20:35.
  * Рассчитать время в секундах, прошедшее с начала суток (30035 в данном случае).
  */
+
 fun seconds(hours: Int, minutes: Int, seconds: Int): Int = seconds + minutes * 60 + hours * 3600
+
+/**
+>>>>>>> 1ef1f4fd07b9f9f72d7d11da1d4ac378fe6285dc (Doing lesson)
+**/
 
 /**
  * Тривиальная (1 балл)
@@ -78,6 +85,8 @@ fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double =
     (sagenes * 48.0 + arshins * 16 + vershoks) * 0.04445
 
 /**
+<<<<<<< HEAD
+=======
  * Тривиальная (1 балл)
  *
  * Пользователь задает угол в градусах, минутах и секундах (например, 36 градусов 14 минут 35 секунд).
@@ -85,6 +94,10 @@ fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double =
  */
 fun angleInRadian(deg: Int, min: Int, sec: Int): Double =
     deg * (PI / 180) + min * (PI / (180 * 60)) + sec * (PI / (180 * 60 * 60))
+
+/**
+>>>>>>> 1ef1f4fd07b9f9f72d7d11da1d4ac378fe6285dc (Doing lesson)
+ **/
 
 /**
  * Тривиальная (1 балл)
@@ -95,6 +108,8 @@ fun angleInRadian(deg: Int, min: Int, sec: Int): Double =
 fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double = sqrt(sqr(x1 - x2) + sqr(y1 - y2))
 
 /**
+<<<<<<< HEAD
+=======
  * Простая (2 балла)
  *
  * Пользователь задает целое число, большее 100 (например, 3801).
@@ -103,6 +118,12 @@ fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double = sqrt(s
 fun thirdDigit(number: Int): Int = (number % 1000) / 100
 
 /**
+>>>>>>> 1ef1f4fd07b9f9f72d7d11da1d4ac378fe6285dc (Doing lesson)
+ **/
+
+/**
+<<<<<<< HEAD
+=======
  * Простая (2 балла)
  *
  * Поезд вышел со станции отправления в h1 часов m1 минут (например в 9:25) и
@@ -111,6 +132,10 @@ fun thirdDigit(number: Int): Int = (number % 1000) / 100
  */
 fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int): Int =
     (hoursArrive - hoursDepart) * 60 + (minutesArrive - minutesDepart)
+
+/**
+>>>>>>> 1ef1f4fd07b9f9f72d7d11da1d4ac378fe6285dc (Doing lesson)
+ **/
 
 /**
  * Простая (2 балла)
