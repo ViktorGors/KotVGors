@@ -18,7 +18,9 @@ package lesson12.task1
  * Класс должен иметь конструктор по умолчанию (без параметров).
  */
 class PhoneBook {
-    var PhoneBook = HashMap<String, MutableSet<String>>()
+
+    var PhoneBook = mutableMapOf<String, MutableSet<String>>()
+    //var PhoneBook = HashMap<String, MutableSet<String>>()
 
     private fun СorrectIncorrectNum(num: String) {
         if (!num.matches(Regex("[0-9+*\\-#]+"))) throw IllegalArgumentException("Incorrect number! Please check the data entry.")
