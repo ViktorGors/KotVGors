@@ -79,5 +79,8 @@ class Complex(val re: Double, val im: Double) {
     /**
      * Преобразование в строку
      */
-    override fun toString(): String = "$re+${im}i"
+    override fun toString(): String {
+        return if (im > 0.0) "$re+${im}i"
+        else "$re${im}i"
+    }
 }
