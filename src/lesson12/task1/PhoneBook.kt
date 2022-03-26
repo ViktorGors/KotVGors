@@ -20,7 +20,6 @@ package lesson12.task1
 class PhoneBook {
 
     var PhoneBook = mutableMapOf<String, MutableSet<String>>()
-    //var PhoneBook = HashMap<String, MutableSet<String>>()
 
     private fun СorrectIncorrectNum(num: String) {
         if (!num.matches(Regex("[0-9+*\\-#]+"))) throw IllegalArgumentException("Incorrect number! Please check the data entry.")
